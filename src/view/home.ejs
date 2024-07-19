@@ -139,5 +139,12 @@
     <%- include('partials/footer') %>
 
     <script async src="/script/home.js"></script>
+    <script>
+        if(localStorage.getItem("admin") === "true"){
+    console.log("caiu aqui");
+    window.location.href = ("/vendedor")
+}
+
+    </script>
 </body>
 </html>

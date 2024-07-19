@@ -22,29 +22,6 @@ header h6{
 
 
 }
-.menu{
-height: 100px;
-}
-
-
-.menu h1{
-left: 0;
-margin-left: 100px;
-position: absolute;
-display: inline-block;
-font-size: 40px;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-top: 80px;
-margin-right: 300px;
-}
-
-.menu h5{
-display: inline-block;
-  margin-right: 60px;
-  font-size: 30px;
-  color: rgb(0, 0, 0);
-  margin: 16px; 
-}
 
 /* style.css */
 :root {
@@ -69,32 +46,6 @@ text-align: center;
 color: white;
 }
 
-.menu {
-display: flex;
-justify-content: center;
-
-padding: 20px;
-
-}
-
-.menu ul {
-display: flex;
-align-items: center;
-list-style: none;
-margin: 0;
-padding: 0;
-
-}
-
-.menu li {
-margin-right: 60px;
-}
-
-.menu a {
-color: rgb(0, 0, 0);
-text-decoration: none;
-font-size: 18px;
-}
 
 .search-bar {
 display: flex;
@@ -148,10 +99,7 @@ margin-bottom: 50px;
 hr{
 background-color: #ccc;
 }
-.menu nav{
-margin-right: 40px;
-height: 30px;
-}
+
 header h1{
 margin-top: 40px;
 
@@ -673,20 +621,7 @@ color: black;
   margin-top: 50px;
 }
 
-.menu h1 {
-  font-size: 25px;
-  margin-left: 30px;
-}
 
-.menu ul {
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.menu li {
-  margin-right: 0;
-  margin-bottom: 10px;
-}
 
 .search-bar {
   flex-direction: column;
@@ -734,9 +669,7 @@ color: black;
   justify-content: space-around;
 }
 
-.menu ul {
-display: none;
-}
+
 #sidebar a {
   font-size: 14px;
   padding: 8px;
@@ -991,19 +924,7 @@ height: 15px;
 
 }
 
-.menu h1 {
-  font-size: 35px;
-  margin-left: 50px;
-}
 
-.menu ul {
-  flex-direction: row;
-  align-items: center;
-}
-
-.menu li {
-  margin-right: 30px;
-}
 
 .search-bar {
   flex-direction: row;

@@ -61,26 +61,36 @@ account_circle
            
         </div>`
 
-    var adminLogado = ` <a href="/"><h1>Seller's Area</h1></a>
-        <ul>
-            
+    var adminLogado = `
+    <div class = "logo">
+    <a href="/vendedor"><h1>Seller's Area</h1></a>
+    </div>    
+    <ul>
+    
           
         </ul>
        
-        <div class="search-bar">
+       
             <div class="container1">
-                <h1> <br> </h1>
+               
+               
+           <div class = "icons">
              <div class="dropdown">
-  <button class="dropbtn">Perfil</button>
+  <button class="dropbtn"><span class="material-symbols-outlined">
+account_circle
+</span></button>
   <div class="dropdown-content">
+  
   <a id = "btnLogOut" href="#">Logout</a>
   </div>
+  </div>
 </div>
-              </div>
+             
              
           
            
         </div>`
+        
     if (localStorage.getItem("admin") === "true") {
         console.log("era pra ter ido");
         menu.innerHTML = adminLogado
@@ -107,6 +117,12 @@ function logOut() {
         window.location.href = "/"
     })
 }
+
+// if(localStorage.getItem("admin") === "true"){
+//     console.log("caiu aqui");
+//     window.location.href = ("/vendedor")
+// }
+
 
 // function eAdmin() {
 //     const menu = document.getElementsByClassName("menu")[0]

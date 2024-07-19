@@ -203,26 +203,7 @@ header h6{
    
    
 }
-.menu{
-  height: 100px;
-}
 
-
-.menu h1{
-  display: inline-block;
-  font-size: 40px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin: 30px;
-  margin-right: 300px;
-}
-
-.menu h5{
-  display: inline-block;
-    margin-right: 60px;
-    font-size: 30px;
-    color: rgb(0, 0, 0);
-    margin: 16px; 
-}
 
 /* style.css */
 :root {
@@ -247,39 +228,6 @@ header {
   color: white;
 }
 
-.menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-}
-
-
-.menu h1 {
-
-  margin-left: 100px;
-  position: absolute;
-  font-size: 40px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-top: 50px;
-}
-
-.menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-.menu li {
-  margin-right: 60px;
-}
-
-.menu a {
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-  font-size: 18px;
-}
 
 .search-bar {
   display: flex;
@@ -335,9 +283,7 @@ object-fit: cover;
 hr{
   background-color: #ccc;
 }
-.menu nav{
-  height: 30px;
-}
+
 header h1{
   margin-top: 40px;
   
