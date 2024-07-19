@@ -56,7 +56,7 @@ router.get("/carrinho", frontController.getCarrinho)
 
 //ROTAS USER
 
-router.get('/Cadastro', frontController.getCadastro)
+router.get('/cadastro', frontController.getCadastro)
 router.get('/login', frontController.getLogin)
 router.get('/vendedor/login', frontController.getLoginVendedor)
 router.get("/conta/editar", frontController.getEditarConta)

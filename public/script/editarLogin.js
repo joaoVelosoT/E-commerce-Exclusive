@@ -8,6 +8,12 @@ const msgErro = document.getElementById("erro")
 
 const user = JSON.parse(localStorage.getItem("user"))
 
+
+
+if(localStorage.getItem("estaLogado") === "false"){
+    window.location.href ="/login" 
+}
+
 function changeProfile() {
 
 
