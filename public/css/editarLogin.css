@@ -30,8 +30,20 @@
 }
 
 .topo{
+  /* background-color: #313131; */
+  /* position: relative; */
+  position: relative;
   display: flex;
-  padding: 120px;
+  justify-content: space-between;
+  /* flex-direction: row;
+  justify-content: center;
+  
+  align-items: center; */
+  width: 100%;
+  /* margin: 50px; */
+  margin-top: 50px;
+  margin-bottom: 50px;
+  /* padding: 50px; */
   padding-bottom: 0px;
   font-size: 17px;
 }
@@ -46,7 +58,7 @@
 }
 
 .pagina{
-    width: 50%;
+    /* width: 50%; */
 }
 
 .paginaD a{
@@ -54,12 +66,12 @@
     color: black;
 }
 .paginaD{
-    width: 50%;
-    text-align: right;
+    /* width: 50%; */
+    /* text-align: right; */
 
 }
 .paginaD #nomeUsuario,
-.container1 #nomeUsuario{
+.container3 #nomeUsuario{
     color: rgb(228, 63, 63);
 }
 
@@ -67,46 +79,59 @@
 
 
 .containerPai{
-  display: flex;
-  justify-content: center;
+  /* background-color: #313131; */
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* flex-direction: column; */
+  /* align-items: center; */
   width: 100%;
   height: 700px;
   font-size: 16px;
   padding-top: 0px;
-  padding: 120px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
-.container1{
-  position: absolute;
+ .container3{
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  /* position: relative; */
   left: 0;
-  height: 900px;
-  padding: 120px;
+  /* height: 900px;
+  padding: 120px; */
   padding-top: 0px;
 }
 
-.container1 ul {
+.manage {
+  left: 0;
+  padding-left: 50px;
+  position: absolute;
+}
+
+.container3 ul {
   list-style-type: none;
   margin-left: 40px;
 }
 
-.container1 h1{
+.container3 h1{
   font-size: 24px;
 }
-.container1 ul li {
+.container3 ul li {
   padding: 7px;
-}
+} 
 
-.container1 li{
+ .container3 li{
   color: #828282;
 }
-.container1 a{
+.container3 a{
   text-decoration: none;
   color: #828282;
 }
-.container1 h1 a{
+.container3 h1 a{
   text-decoration: none;
   color: #313131;
-}
+} 
 
 
 .container2 {
@@ -131,7 +156,8 @@
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   height: 550px;
-  width: 1000px;
+  width: 100%;
+  margin-left: 50px;
 }
 
 .profile-edit h1 {
@@ -274,7 +300,7 @@
       
       
 }
-header{
+/* header{
     width: 100%;
     height: 30px;
     background-color: black;
@@ -286,7 +312,7 @@ header h6{
     color: white;
    
    
-}
+} */
 
 /* style.css */
 :root {
@@ -303,13 +329,13 @@ header h6{
   font-size: var(--font-size);
 }
 
-header {
+/* header {
   width: 100%;
   height: var(--header-height);
   background-color: black;
   text-align: center;
   color: white;
-}
+} */
 
 .search-bar {
   display: flex;
@@ -364,10 +390,10 @@ hr{
   background-color: #ccc;
 }
 
-header h1{
+/* header h1{
   margin-top: 40px;
   
-}
+} */
 
 
 

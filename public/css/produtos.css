@@ -20,7 +20,6 @@ header h6{
   text-align: center;
   color: white;
 
-
 }
 
 /* style.css */
@@ -540,7 +539,7 @@ visibility: hidden;
 visibility: hidden;
 }
 
-.dropbtn {
+/* .dropbtn {
 background-color: #DB4444;
 
 color: white;
@@ -548,14 +547,14 @@ padding: 16px;
 font-size: 16px;
 border: none;
 cursor: pointer;
-}
+} */
 
-.dropdown {
+/* .dropdown {
 position: relative;
 display: inline-block;
-}
+} */
 
-.dropdown-content {
+/* .dropdown-content {
 display: none;
 position: absolute;
 background-color: #f9f9f9;
@@ -580,7 +579,7 @@ display: block;
 .dropdown:hover .dropbtn {
 background-color: #DB4444;
 
-}
+} */
 
 
 
