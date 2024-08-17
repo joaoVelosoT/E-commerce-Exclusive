@@ -1,208 +1,211 @@
-
-.topo{
-    display: flex;
-    padding: 20px;
-    font-size: 24px;
+.topo {
+  display: flex;
+  padding: 20px;
+  font-size: 24px;
 }
 
-.pagina{
-    font-weight: bold;
-    font-size: 24px;
-    width: 50%;
+.pagina {
+  font-weight: bold;
+  font-size: 24px;
+  width: 50%;
 }
 
-.pagina a{
-    text-decoration: none;
-    color: black;
+.pagina a {
+  text-decoration: none;
+  color: black;
 }
 
-#home{
-    color: #313131;
+#home {
+  color: #313131;
 }
 
 /*AREA DO CARRINHO*/
 
-.container{
-    
-    text-align: center;
-    align-items: center;
-    display: flex;
-    padding: 20px;
-    width: 100%;
-    height: 100px;
+.container {
+
+  text-align: center;
+  align-items: center;
+  display: flex;
+  padding: 20px;
+  width: 100%;
+  height: 100px;
 }
 
-.linhaConteudo{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 80px;
-    align-items: center;
-    text-align: left;
-    border-radius: 10px;
-    box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+.linhaConteudo {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
+  align-items: center;
+  text-align: left;
+  border-radius: 10px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
 }
 
-.linhaConteudo2 h1{
-    width: 20%;
-    text-align: center;
-    font-size: 20px;
+.linhaConteudo2 h1 {
+  width: 20%;
+  text-align: center;
+  font-size: 20px;
 }
 
-.linhaConteudo h1{
-    width: 20%;
-    text-align: center;
-    font-size: 20px;
+.linhaConteudo h1 {
+  width: 20%;
+  text-align: center;
+  font-size: 20px;
 }
 
 
-.container h2{
-    width: 20%;
-    font-size: 20px;
-    text-align: center;
+.container h2 {
+  width: 20%;
+  font-size: 20px;
+  text-align: center;
 }
 
-.imagem, .preco, .quanti{
-    width: 20%;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+.imagem,
+.preco,
+.quanti {
+  width: 20%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 
 .image {
-    display: flex;
-    align-items: center;
-    width: 20%;
+  display: flex;
+  align-items: center;
+  width: 20%;
 }
-.image h2{
-    margin-left: 15px;
-    width: 50%;
+
+.image h2 {
+  margin-left: 15px;
+  width: 50%;
 }
 
 .image img {
-    width: 70px;
-    height: 70px;
-    padding: 10px;
+  width: 70px;
+  height: 70px;
+  padding: 10px;
 }
 
-.linhaConteudo input{
+.linhaConteudo input {
   text-align: center;
-    height: 50px;
-    font-size: 20px;
+  height: 50px;
+  font-size: 20px;
 }
 
 
 /*FINAL DA PAGINA*/
-.meio{
-    padding: 20px;
-    font-size: 24px;
-    width: 100%;
+.meio {
+  padding: 20px;
+  font-size: 24px;
+  width: 100%;
 }
-.bag{
+
+.bag {
   font-size: 20px;
-    float: right;
+  float: right;
 }
 
-.meio button{
-    width: 243px;
-    height: 70px;
-    background-color: white;
-    color: black;
-    border: 1px black solid;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 10px;
-    
+.meio button {
+  width: 243px;
+  height: 70px;
+  background-color: white;
+  color: black;
+  border: 1px black solid;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+
 }
 
-.ultimo{
-    padding: 20px;
-    height: 105px;
-    width: 100%;
-    display: flex;
-    border-radius: 10px;
+.ultimo {
+  padding: 20px;
+  height: 105px;
+  width: 100%;
+  display: flex;
+  border-radius: 10px;
 }
 
-.cupom{
-    width:50% ;
-    height: 100%;
-    margin-right: 133px;
-}
-.pay{
-    height: 300px;
-    width: 40%;
-    margin: 0 auto;
-    padding: 20px ;
-    border: 1px rgb(109, 109, 109) solid;
-    border-radius: 10px;
-    box-shadow: 2px 0 5px rgba(0,0,0,0.2);
-    margin-top: 90px; 
+.cupom {
+  width: 50%;
+  height: 100%;
+  margin-right: 133px;
 }
 
-.cupom input{
-    height: 100%;
-    width: 400px;
-    font-size: 23px;
-    margin-right: 10px;
-    border-radius: 5px;
+.pay {
+  height: 300px;
+  width: 40%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px rgb(109, 109, 109) solid;
+  border-radius: 10px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  margin-top: 90px;
 }
 
-.cupom button{
-    height: 100%;
-    width: 216px;
-    color: white;
-    background-color: rgb(228, 63, 63);
-    border: none;
-    border-radius: 5px;
-    font-size: 23px;
-}
-.cupom intput{
-    text-align: center;
+.cupom input {
+  height: 100%;
+  width: 400px;
+  font-size: 23px;
+  margin-right: 10px;
+  border-radius: 5px;
 }
 
-.pay h3{
-    font-size: 20px;
+.cupom button {
+  height: 100%;
+  width: 216px;
+  color: white;
+  background-color: rgb(228, 63, 63);
+  border: none;
+  border-radius: 5px;
+  font-size: 23px;
 }
-.pay button{
+
+.cupom intput {
+  text-align: center;
+}
+
+.pay h3 {
+  font-size: 20px;
+}
+
+.pay button {
   cursor: pointer;
-    color: white;
-    background-color: rgb(228, 63, 63);
-    height: 90px;
-    width: 50%;
-    margin-left: 110px;
-    font-size: 24px;
-    width: 50%;
-    height: 60px;
-    border: none;
-    border-radius: 10px;
-    font-size: 20px;
-    
-}
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Nanum Gothic", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 11px;
-      
-      
-}
-header{
-    width: 100%;
-    height: 30px;
-    background-color: black;
-    align-items: center;
-}
-header h6{
+  color: white;
+  background-color: rgb(228, 63, 63);
+  height: 90px;
+  width: 50%;
+  margin-left: 110px;
+  font-size: 24px;
+  width: 50%;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
 
-    text-align: center;
-    color: white;
-   
-   
 }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 11px;
+
+
+}
+
+header {
+  width: 100%;
+  height: 30px;
+  background-color: black;
+  align-items: center;
+}
+
+
 
 
 /* style.css */
@@ -259,34 +262,36 @@ header {
 
 .search-bar button img {
   height: 20px;
-  
+
 }
 
 .search-bar button:hover {
   background-color: #ccc;
 }
 
-#carrinho{
+#carrinho {
   background-color: #ffffff;
-margin-bottom: 10px;
-object-fit: cover;
- 
-  
+  margin-bottom: 10px;
+  object-fit: cover;
+
+
 }
+
 .bot {
   cursor: pointer;
 }
-#lupa img{
+
+#lupa img {
   margin-bottom: 50px;
 }
 
-hr{
+hr {
   background-color: #ccc;
 }
 
-header h1{
+header h1 {
   margin-top: 40px;
-  
+
 }
 
 
@@ -323,30 +328,32 @@ header h1{
   background-color: #ffffff;
 }
 
-#line{
+#line {
   position: absolute;
   margin-left: 200px;
 }
 
-#side-img{
+#side-img {
   height: 450px;
-margin-top: 10px;
-margin-left: 300px;
+  margin-top: 10px;
+  margin-left: 300px;
 
- 
+
 }
 
-.today{
+.today {
   margin-top: 100px;
   margin-left: 150px;
- 
+
 }
-.today h1{
+
+.today h1 {
   margin-top: 40px;
   font-size: 35px;
   font-weight: bold;
 }
-.card{
+
+.card {
   display: flex;
   margin-top: 50px;
   margin-left: 100px;
@@ -354,88 +361,93 @@ margin-left: 300px;
   width: 300px;
   height: 300px;
   border-radius: 20px;
-  box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
 }
 
-.card img{
+.card img {
   max-width: 100%;
   object-fit: cover;
   border-radius: 20px;
 }
 
-.card h3{
+.card h3 {
   margin: 50px;
 }
 
- 
+
 .dad {
   white-space: nowrap;
   text-align: center;
 }
- 
+
 .hq {
   display: inline-block;
-  margin-right: 10px; /* Ajuste conforme necessário */
-  vertical-align: top; /* Para alinhar as divs no topo */
+  margin-right: 10px;
+  /* Ajuste conforme necessário */
+  vertical-align: top;
+  /* Para alinhar as divs no topo */
   text-align: left;
   margin: 5px;
   transition: transform 0.3s ease;
- 
- 
- 
+
+
+
 }
- 
- 
-.hq img{
+
+
+.hq img {
   height: 300px;
   width: 300px;
   margin: 5px;
   margin-top: 40px;
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
- 
- 
- 
-}
- 
- 
 
- 
-h4{
-  width: 200px ;
+
+
+}
+
+
+
+
+h4 {
+  width: 200px;
   margin: 20px;
   white-space: pre-line;
   font-size: 20px;
   color: black;
   font-weight: bold;
 }
- 
+
 .dad {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
- 
+
 .hq:hover {
-  transform: translateY(-10px); /* Faz a imagem "saltar" quando o mouse passa por cima */
-}
- 
-.hq:hover h4 {
-  color: rgb(111, 0, 0); /* Muda a cor do texto para vermelho quando o mouse passa por cima */
+  transform: translateY(-10px);
+  /* Faz a imagem "saltar" quando o mouse passa por cima */
 }
 
-#preco{
+.hq:hover h4 {
+  color: rgb(111, 0, 0);
+  /* Muda a cor do texto para vermelho quando o mouse passa por cima */
+}
+
+#preco {
   margin: 20px;
   font-size: 15px;
   color: #DB4444;
   font-weight: bold;
 }
-.botao{
+
+.botao {
   text-align: center;
   margin: 50px;
 }
 
-#button{
+#button {
   height: 60px;
   width: 250px;
   background-color: #DB4444;
@@ -452,27 +464,31 @@ h4{
 
 
 .categoria:hover {
-  transform: translateY(-10px); /* Faz a imagem "saltar" quando o mouse passa por cima */
+  transform: translateY(-10px);
+  /* Faz a imagem "saltar" quando o mouse passa por cima */
 }
- 
+
 .categoria:hover img {
- background-color: #DB4444; /* Muda a cor do texto para vermelho quando o mouse passa por cima */
+  background-color: #DB4444;
+  /* Muda a cor do texto para vermelho quando o mouse passa por cima */
 }
- 
+
 .categoria {
   display: inline-block;
-  margin-right: 10px; /* Ajuste conforme necessário */
-  vertical-align: top; /* Para alinhar as divs no topo */
+  margin-right: 10px;
+  /* Ajuste conforme necessário */
+  vertical-align: top;
+  /* Para alinhar as divs no topo */
   text-align: left;
   margin: 5px;
   transition: transform 0.3s ease;
- 
- 
- 
+
+
+
 }
- 
- 
-.categoria img{
+
+
+.categoria img {
   height: 250px;
   width: 250px;
   margin: 5px;
@@ -481,12 +497,12 @@ h4{
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   object-fit: cover;
   border: #333;
- 
- 
- 
+
+
+
 }
 
-.verMais{
+.verMais {
   height: 60px;
   width: 180px;
   background-color: #DB4444;
@@ -509,46 +525,46 @@ h4{
 
 }
 
-.today button{
+.today button {
 
   margin-top: 50px;
   margin-right: 145px;
 
 }
 
-.verMais:hover{
+.verMais:hover {
   transform: translateY(-2px);
 }
 
 
-.play img{
+.play img {
   margin-top: 100px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-height: 800px;
-object-fit: cover;
+  height: 800px;
+  object-fit: cover;
 
 }
 
-.shop{
+.shop {
   margin: 100px;
   text-align: center;
-  
+
 }
 
-.shop h3{
+.shop h3 {
   font-size: 25px;
   color: black;
- 
+
 }
 
-.shop a{
+.shop a {
 
   color: black;
 }
 
-.pre img{
+.pre img {
   margin-top: 100px;
   display: block;
   margin-left: auto;
@@ -557,31 +573,31 @@ object-fit: cover;
 
 }
 
-.shop1{
+.shop1 {
   margin-left: 200px;
   margin-top: 50px;
   text-align: center;
-  
+
 }
 
-.shop1 h3{
+.shop1 h3 {
   font-size: 25px;
   color: black;
- 
+
 }
 
-.shop1 a{
+.shop1 a {
 
   color: black;
 }
 
-.rodape img{
+.rodape img {
   margin-top: 150px;
   width: 100%;
 }
 
 
-.rodape{
+.rodape {
   color: white;
   background-color: black;
   width: 100%;
@@ -589,43 +605,47 @@ object-fit: cover;
   display: flex;
 }
 
-.profileRodaPe{
+.profileRodaPe {
   margin-top: 100px;
   width: 25%;
   height: 60%;
   font-size: 12px;
   margin-left: 30px;
 }
-.profileRodaPe input{
+
+.profileRodaPe input {
   background-color: black;
   color: white;
   border: 1px white solid;
   height: 30px;
 }
-.profileRodaPe a{
+
+.profileRodaPe a {
   text-decoration: none;
   color: white;
   font-size: 18px;
   margin-top: 10px;
 }
+
 .remove-product {
   cursor: pointer;
   padding: 10px;
   width: 216px;
-    color: white;
-    background-color: rgb(228, 63, 63);
-    border: none;
-    border-radius: 5px;
-    font-size: 17px;
-    margin-left: 20px;
+  color: white;
+  background-color: rgb(228, 63, 63);
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+  margin-left: 20px;
 }
-.rodape img{
+
+.rodape img {
   margin-top: 30px;
   width: 80%;
 }
 
 /* copright */
-#cabo{
+#cabo {
   background-color: black;
   color: #313131;
   justify-content: center;
@@ -636,86 +656,48 @@ object-fit: cover;
   font-size: 20px;
 }
 
-.profileRodaPe h1{
+.profileRodaPe h1 {
   font-weight: bold;
   font-size: 20px;
 }
 
-.profileRodaPe p{
-margin-top: 10px;
+.profileRodaPe p {
+  margin-top: 10px;
   font-size: 18px;
 }
 
-#rodapeCaixa{
+#rodapeCaixa {
   width: 150px;
 }
 
-.seta{
+.seta {
   border: none;
 
   background-color: black;
 }
 
-#nomeLista{
-    background-color: #313131;
+#nomeLista {
+  background-color: #313131;
 }
 
 
 
-.body{
-    padding: 120px;
-    padding-top: 50px ;
+.body {
+  padding: 120px;
+  padding-top: 50px;
 
 }
+
 /* user */
-.user img{
+.user img {
   height: 25px;
   width: 25px;
   margin-top: 10px;
-  
-}
-.dropbtn {
-  background-color: #DB4444;
-
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  margin-right: 100px
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: #DB4444;
 
 }
+
+
+
 
 .container1 {
   right: 0;
@@ -725,25 +707,26 @@ margin-top: 10px;
   align-items: center;
   text-align: right;
 }
+
 .search-container {
   text-align: center;
   margin-bottom: 20px;
   margin-right: 100px;
 }
- 
- 
+
+
 #searchInput {
   padding: 10px;
   width: 250px;
   border-radius: 5px;
- margin-bottom: -50px;
+  margin-bottom: -50px;
 
 
 }
- 
+
 .search-container button {
   padding: 10px 20px;
- margin-right: -140px;
+  margin-right: -140px;
   color: white;
   border: none;
   border-radius: 5px;
@@ -751,20 +734,20 @@ margin-top: 10px;
   transition: background-color 0.3s;
   background-color: white;
 }
- 
+
 .search-container button:hover {
   background-color: #ffffff;
 }
- 
- 
+
+
 #searchResults {
- 
+
   border-radius: 5px;
   padding: 10px;
   margin-top: 10px;
 }
 
-.search-container button img{
+.search-container button img {
   margin-bottom: -9px;
   width: 25px;
   height: auto;
