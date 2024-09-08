@@ -1,5 +1,5 @@
 {
-  "nextId": 177,
+  "nextId": 178,
   "Products": [
     {
       "id": 29,
@@ -80,14 +80,6 @@
       "description": "Romance de suspense que se passa em uma biblioteca mágica.",
       "type": "livros",
       "image": "https://m.media-amazon.com/images/I/81iqH8dpjuL._AC_UL320_.jpg"
-    },
-    {
-      "id": 41,
-      "name": "Câmera Babá",
-      "price": 153.99,
-      "description": "Câmera de vigilância para bebês com áudio e vídeo de alta qualidade.",
-      "type": "eletronicos",
-      "image": "https://m.media-amazon.com/images/I/61KPV6Wr6sL._AC_UL320_.jpg"
     },
     {
       "id": 42,
@@ -648,6 +640,14 @@
       "description": "Cadeira ergonômica para escritório, confortável e ajustável.",
       "type": "casa e jardim",
       "image": "https://m.media-amazon.com/images/I/61VpeQ3B-JL._AC_SX679_.jpg"
+    },
+    {
+      "id": 177,
+      "name": "BOLA DE FUTEBOL",
+      "price": "30",
+      "description": "BOLA DE FUTEBOL ",
+      "type": "roupas",
+      "image": "https://cdnv2.moovin.com.br/deckeronline/imagens/produtos/det/bola-futebol-campo-topper-slick-22-impermeavel-8f329acbe17ef77842b07aed4624d6d5.jpg"
     }
   ]
 }
