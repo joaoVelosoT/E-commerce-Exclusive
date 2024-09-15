@@ -1,10 +1,11 @@
 const {Router} = require('express')
 const { ValidateCliente } = require('../middlewares/ValidateCliente')
+const ClienteController = require("../controllers/ClienteController");
 const router = Router()
 
 
-router.post("/",ValidateCliente, (req,res)=> {
-    // ClienteController.create(req,res);
+router.post("/", ValidateCliente, (req,res)=> {
+    ClienteController.create(req,res);
 })
 
 router.get("/", (req,res)=> {

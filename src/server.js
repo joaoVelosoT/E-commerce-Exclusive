@@ -23,7 +23,7 @@ sequelize
 })
 .then(async ()=> {
     app.listen(process.env.PORT == null ? 2030 : process.env.PORT, ()=>{
-        console.log("O servidor esta no ar")
+        console.log("O servidor esta no ar na porta 2030")
     })
 })
 
