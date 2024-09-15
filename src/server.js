@@ -4,9 +4,11 @@ const cors = require('cors');
 const router = require('./routers/router');
 const sequelize = require('./config/config');
 
+
+app.use(express.json())
 app.use(cors())
 app.use("/", router)
-app.use(express.json())
+
 
 app.get("/healthcheck", (req,res)=> {
     return res.status(200).json({
