@@ -1,18 +1,18 @@
 CREATE DATABASE ecommerceexclusive;
-
+-- DROP DATABASE ecommerceexclusive;
 USE ecommerceexclusive;
 
 
-CREATE TABLE cliente(
+CREATE TABLE clientes(
 	id_cliente INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 	nome_cliente VARCHAR(100) NOT NULL,
     email_cliente VARCHAR(256) NOT NULL UNIQUE,
     senha_cliente VARCHAR(100) NOT NULL,
     cpf_cliente VARCHAR(11) NOT NULL UNIQUE
 );
-INSERT INTO cliente(nome_cliente,email_cliente,senha_cliente,cpf_cliente) VALUES
+INSERT INTO clientes(nome_cliente,email_cliente,senha_cliente,cpf_cliente) VALUES
 ("Joao Vitor","email@teste","senhateste","46757911802");
-SELECT * FROM cliente;
+SELECT * FROM clientes;
 
 CREATE TABLE categorias(
 	id_categoria INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
@@ -78,7 +78,7 @@ CREATE TABLE imagens_produtos(
     FOREIGN KEY (id_produto) REFERENCES produtos(id_produto) ON DELETE CASCADE
 );
 
-
+-- DROP TABLE clientes;
 
 INSERT INTO imagens_produtos(url_imagem,descricao_imagem,id_produto) VALUES
 ("https://http2.mlstatic.com/D_NQ_NP_969408-MLU75401927010_042024-O.webp",
@@ -94,7 +94,7 @@ CREATE TABLE cartoes_clientes(
     cvv VARCHAR(4) NOT NULL,
     apelido_cartao VARCHAR(100),
     id_cliente INT NOT NULL,
-    FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente) ON DELETE CASCADE
+    FOREIGN KEY (id_cliente) REFERENCES clientes(id_cliente) ON DELETE CASCADE
 );
 
 INSERT INTO cartoes_clientes(numero_cartao,nome_no_cartao,validade,cvv,apelido_cartao,id_cliente) VALUES
@@ -115,7 +115,7 @@ CREATE TABLE enderecos_clientes(
     estado VARCHAR(100) NOT NULL,
     cep VARCHAR(20) NOT NULL,
     id_cliente INT NOT NULL,
-    FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente) ON DELETE CASCADE
+    FOREIGN KEY (id_cliente) REFERENCES clientes(id_cliente) ON DELETE CASCADE
 );
 
 INSERT INTO enderecos_clientes(rua,cidade,estado,cep,id_cliente) VALUES
@@ -135,7 +135,7 @@ CREATE TABLE pedidos(
     data_pedido DATE NOT NULL,
     preco_total DOUBLE NOT NULL,
 	id_cliente INT NOT NULL,
-    FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente) ON DELETE CASCADE
+    FOREIGN KEY (id_cliente) REFERENCES clientes(id_cliente) ON DELETE CASCADE
 );
 
 INSERT INTO pedidos(data_pedido,preco_total,id_cliente) VALUES
