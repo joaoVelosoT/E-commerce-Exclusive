@@ -4,13 +4,13 @@ const ClienteController = {
     create : async (req,res) => {
 
         try {
-            const {nome,email,senha,cpf} = req.body;
+            const { nome_cliente, email_cliente, senha_cliente, cpf_cliente } = req.body;
             
         await Cliente.create({
-            nome : nome,
-            email : email,
-            senha : senha,
-            cpf : cpf
+            nome : nome_cliente,
+            email : email_cliente,
+            senha : senha_cliente,
+            cpf : cpf_cliente
         })
 
         return res.status(200).json({

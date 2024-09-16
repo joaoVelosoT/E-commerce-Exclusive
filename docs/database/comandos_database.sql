@@ -1,14 +1,14 @@
 CREATE DATABASE ecommerceexclusive;
-DROP DATABASE ecommerceexclusive;
+
 USE ecommerceexclusive;
 
 
 CREATE TABLE cliente(
 	id_cliente INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 	nome_cliente VARCHAR(100) NOT NULL,
-    email_cliente VARCHAR(256) NOT NULL,
+    email_cliente VARCHAR(256) NOT NULL UNIQUE,
     senha_cliente VARCHAR(100) NOT NULL,
-    cpf_cliente VARCHAR(11) NOT NULL
+    cpf_cliente VARCHAR(11) NOT NULL UNIQUE
 );
 INSERT INTO cliente(nome_cliente,email_cliente,senha_cliente,cpf_cliente) VALUES
 ("Joao Vitor","email@teste","senhateste","46757911802");
@@ -16,7 +16,7 @@ SELECT * FROM cliente;
 
 CREATE TABLE categorias(
 	id_categoria INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    nome_categoria VARCHAR(100) NOT NULL
+    nome_categoria VARCHAR(100) NOT NULL UNIQUE
 );
 
 INSERT INTO categorias(nome_categoria) VALUES
@@ -27,9 +27,9 @@ SELECT * FROM categorias;
 CREATE TABLE vendedores(
 	id_vendedor INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     nome_vendedor VARCHAR(100) NOT NULL,
-    email_vendedor VARCHAR(256) NOT NULL,
-    senha_vendedor VARCHAR(100) NOT NULL,
-    cnpj_vendedor VARCHAR(14) NOT NULL
+    email_vendedor VARCHAR(256) NOT NULL UNIQUE,
+    senha_vendedor VARCHAR(100) NOT NULL UNIQUE,
+    cnpj_vendedor VARCHAR(14) NOT NULL UNIQUE
 );
 
 INSERT INTO vendedores(nome_vendedor,email_vendedor,senha_vendedor,cnpj_vendedor) VALUES
@@ -88,7 +88,7 @@ INSERT INTO imagens_produtos(url_imagem,descricao_imagem,id_produto) VALUES
 
 CREATE TABLE cartoes_clientes(
 	id_cartao_cliente INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    numero_cartao VARCHAR(16) NOT NULL,
+    numero_cartao VARCHAR(16) NOT NULL ,
     nome_no_cartao VARCHAR(255) NOT NULL,
     validade DATE NOT NULL,
     cvv VARCHAR(4) NOT NULL,
@@ -167,12 +167,12 @@ CREATE TABLE entregas(
     data_envio DATE NOT NULL,
     data_entrega_estimada DATE NOT NULL,
     data_entrega DATE NOT NULL,
-    status ENUM('pendente','enviado','entrege','cancelado') DEFAULT 'pendente',
+    status ENUM('pendente','enviado','entregue','cancelado') DEFAULT 'pendente',
     FOREIGN KEY (id_endereco_entrega) REFERENCES enderecos_clientes(id_endereco_cliente),
     FOREIGN KEY (id_pedido) REFERENCES pedidos(id_pedido)
 );
 
-ALTER TABLE entregas MODIFY status ENUM('pendente','enviado','entregue','cancelado') DEFAULT 'pendente';
+-- ALTER TABLE entregas MODIFY status ENUM('pendente','enviado','entregue','cancelado') DEFAULT 'pendente';
 
 INSERT INTO entregas(id_endereco_entrega,id_pedido,data_envio,data_entrega_estimada,data_entrega) VALUES
 (1,1,'2024-09-08','2024-09-13','2024-08-10');
@@ -180,11 +180,3 @@ INSERT INTO entregas(id_endereco_entrega,id_pedido,data_envio,data_entrega_estim
 
 
 UPDATE entregas SET status = 'entregue' WHERE id_entrega = 1;
-
-
-
-
-
-
-
-
