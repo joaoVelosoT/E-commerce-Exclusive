@@ -2,15 +2,22 @@
 const validator = require('validator');
 const  {cpf} = require('cpf-cnpj-validator')
 
+
+
+// Colocar Validacao blacklist 
+
+
 const ValidateCliente = (req, res, next) => {
   try {
     const { nome_cliente, email_cliente, senha_cliente, cpf_cliente } = req.body;
-
+    
     if (!nome_cliente || !email_cliente || !senha_cliente || !cpf_cliente) {
       return res.status(400).json({
         msg: "Campos invalidos, revise seus dados",
       });
     }
+
+    // console.log(validator.contains("@", email_cliente))
 
     // Validando o nome
     if(!valName(nome_cliente)){
@@ -42,8 +49,10 @@ const ValidateCliente = (req, res, next) => {
         msg : "O cpf e invalido"
       })
     }
-
-    return next();
+    res.status(200).json({
+      msg : "Deu tudo certo, mas nao foi pro DB"
+    })
+    // return next();
   } catch (error) {
     console.error(error);
     res.status(400).json({

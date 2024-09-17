@@ -17,7 +17,7 @@ SELECT * FROM clientes;
 CREATE TABLE categorias(
 	id_categoria INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     nome_categoria VARCHAR(100) NOT NULL UNIQUE
-);
+);  
 
 INSERT INTO categorias(nome_categoria) VALUES
 ("Eletronicos");

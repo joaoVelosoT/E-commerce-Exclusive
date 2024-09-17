@@ -5,6 +5,7 @@ const router = Router()
 
 
 router.post("/", ValidateCliente, (req,res)=> {
+    
     ClienteController.create(req,res);
 })
 
