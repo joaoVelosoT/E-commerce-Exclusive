@@ -3,27 +3,29 @@ const sequelize = require('../config/config');
 
 // Ver a forma certa de "importar" a tabela do mysql
 const Cliente = sequelize.define("clientes", {
-    id : {
+    id_cliente : {
         type : DataTypes.INTEGER,
+        primaryKey : true,
         allowNull : false,
         autoIncrement : true,
-        primaryKey : true
     },
-    nome : {
+    nome_cliente : {
         type : DataTypes.STRING,
         allowNull : false,
     },
-    email : {
+    email_cliente : {
+        type : DataTypes.STRING,
+        allowNull : false,
+        unique : true
+    },
+    senha_cliente : {
         type : DataTypes.STRING,
         allowNull : false,
     },
-    senha : {
+    cpf_cliente : {
         type : DataTypes.STRING,
         allowNull : false,
-    },
-    cpf : {
-        type : DataTypes.STRING,
-        allowNull : false,
+        unique : true
     }
 })
 

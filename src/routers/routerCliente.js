@@ -5,12 +5,11 @@ const router = Router()
 
 
 router.post("/", ValidateCliente, (req,res)=> {
-    
     ClienteController.create(req,res);
 })
 
 router.get("/", (req,res)=> {
-    // ClienteController.getAll(req,res);
+    ClienteController.getAll(req,res);
 })
 
 router.get("/:id", (req,res)=> {
