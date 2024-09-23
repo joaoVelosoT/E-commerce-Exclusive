@@ -15,7 +15,7 @@ const ValidateCliente = (req, res, next) => {
       });
     }
 
-    // console.log(validator.contains("@", email_cliente))
+
 
     // Validando o nome
     if (!valName(nome_cliente)) {
@@ -47,9 +47,7 @@ const ValidateCliente = (req, res, next) => {
         msg: "O cpf e invalido",
       });
     }
-    // res.status(200).json({
-    //   msg: "Deu tudo certo, mas nao foi pro DB",
-    // });
+
     return next();
   } catch (error) {
     console.error(error);
@@ -59,7 +57,32 @@ const ValidateCliente = (req, res, next) => {
   }
 };
 
-module.exports = { ValidateCliente };
+
+const ValidateClienteID = (req,res,next) => {
+  try {
+    const {id_cliente} = req.params;
+
+    if(!id_cliente){
+      return res.status(400).json({
+        msg : 'Valide os parametros'
+      })
+    }
+
+    if(isNaN(id_cliente)){
+      return res.status(400).json({
+        msg : 'O parametro não e um numero'
+      })
+    }
+    return next();
+  } catch (error) {
+    console.error(error);
+    return res.status(400).json({
+      msg : "Contate o suporte"
+    })
+  }
+}
+
+module.exports = { ValidateCliente, ValidateClienteID };
 
 function valName(nome) {
   const nomeLimpo = nome.trim();
