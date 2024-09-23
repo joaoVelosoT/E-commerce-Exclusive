@@ -68,7 +68,25 @@ const CategoriaController = {
     },
     update : async (req,res) => {
         try {
-            
+
+            const {nome_categoria} = req.body;
+            const {id_categoria} = req.params;
+
+            const categoria = await Categoria.findByPk(id_categoria);
+            if(!categoria){
+                return res.status(400).json({
+                    msg : "Não foi encontrado a categoria"
+                })
+            }
+
+            await categoria.update({nome_categoria});
+
+            return res.status(200).json({
+                msg : "Categoria atualizada",
+                categoria
+            })
+
+
         } catch (error) {
             console.error(error);
             return res.status(400).json({
@@ -78,7 +96,22 @@ const CategoriaController = {
     },
     delete : async (req,res) => {
         try {
-            
+            const {id_categoria} = req.params;
+
+            const categoria = await Categoria.findByPk(id_categoria);
+            if(!categoria){
+                return res.status(400).json({
+                    msg : "Não foi encontrado a categoria"
+                })
+            }
+
+            await categoria.destroy();
+
+            return res.status(200).json({
+                msg : "Categoria deletada com sucesso",
+                categoria
+            })
+
         } catch (error) {
             console.error(error);
             return res.status(400).json({
