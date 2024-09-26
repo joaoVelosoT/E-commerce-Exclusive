@@ -28,7 +28,11 @@ const ValidateVendedor = (req,res,next) => {
             });
           }
 
-
+          if(!cnpj.isValid(cnpj_vendedor)){
+            return res.status(400).json({
+                msg : "Digite um CNPJ valido"
+            })
+          }
 
         return next();
     } catch (error) {
@@ -39,8 +43,32 @@ const ValidateVendedor = (req,res,next) => {
     }
 };
 
+const ValidateVendedorID = (req,res,next) => {
+    try {
+      const {id_vendedor} = req.params;
+  
+      if(!id_vendedor){
+        return res.status(400).json({
+          msg : 'Valide os parametros'
+        })
+      }
+  
+      if(isNaN(id_vendedor)){
+        return res.status(400).json({
+          msg : 'O parametro não e um numero'
+        })
+      }
+      return next();
+    } catch (error) {
+      console.error(error);
+      return res.status(500).json({
+        msg : "Contate o suporte"
+      })
+    }
+  };
 
-module.exports = ValidateVendedor;
+
+module.exports = {ValidateVendedor, ValidateVendedorID};
 
 
 // CREATE TABLE vendedores(

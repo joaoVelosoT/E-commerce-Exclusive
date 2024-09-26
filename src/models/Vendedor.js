@@ -19,7 +19,7 @@ const Vendedor = sequelize.define("vendedor", {
     },
     senha_vendedor : {
         type : DataTypes.STRING(100),
-        unique : true,
+        // unique : true,
         allowNull : false,
     },
     cnpj_vendedor : {
