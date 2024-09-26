@@ -32,11 +32,11 @@ const ValidateCliente = (req, res, next) => {
 
     // Validando a senha
     if (!validator.isStrongPassword(senha_cliente)) {
-      res.status(400).json({
+      return res.status(400).json({
         msg: "Digite uma senha forte",
       });
     } else if (senha_cliente.length > 100) {
-      res.status(400).json({
+      return res.status(400).json({
         msg: "Digite uma senha com no maximo 100 caracteres",
       });
     }
