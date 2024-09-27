@@ -127,6 +127,31 @@ const VendedorController = {
                 msg : "Erro, contate o suporte"
             })
         }
+    },
+    delete : async (req,res) => {
+        try {
+            console.log("teste")
+            const {id_vendedor} = req.params;
+
+            const vendedor = await Vendedor.findByPk(id_vendedor);
+
+            if(!vendedor) {
+                return res.status(400).json({
+                    msg : "Vendedor não encontrado"
+                })
+            }
+
+            await vendedor.destroy();
+
+            return res.status(200).json({
+                msg : "Vendedor deletado com sucesso"
+            })
+        } catch (error) {
+            console.error(error);
+            return res.status(500).json({
+                msg : "Erro, contate o suporte"
+            })
+        }
     }
 
 }

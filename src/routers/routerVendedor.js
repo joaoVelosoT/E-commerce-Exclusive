@@ -19,5 +19,8 @@ router.put('/:id_vendedor', ValidateVendedorID,ValidateVendedor, (req,res)=> {
     VendedorController.update(req,res);
 })
 
+router.delete('/:id_vendedor', ValidateVendedorID, (req,res) => {
+    VendedorController.delete(req,res);
+})
 
 module.exports = router;
