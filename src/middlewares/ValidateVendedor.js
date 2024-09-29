@@ -58,6 +58,12 @@ const ValidateVendedorID = (req,res,next) => {
           msg : 'O parametro não e um numero'
         })
       }
+
+      if(id_vendedor < 0){
+        return res.status(400).json({
+            msg : "O parametro não pode ser negativo"
+        })
+    }
       return next();
     } catch (error) {
       console.error(error);

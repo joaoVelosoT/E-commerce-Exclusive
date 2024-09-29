@@ -39,6 +39,12 @@ const ValidateCategoriaID = (req, res, next) => {
       });
     }
 
+    if(id_categoria < 0){
+      return res.status(400).json({
+          msg : "O parametro não pode ser negativo"
+      })
+  }
+
     return next();
   } catch (error) {
     console.error(error);
