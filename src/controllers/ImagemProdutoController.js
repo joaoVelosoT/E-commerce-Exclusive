@@ -1,5 +1,8 @@
 const fs = require('fs')
 const multer = require('multer');
+const storage = multer.memoryStorage(); 
+const upload = multer({ storage : storage});
+const sharp = require('sharp');
 const ImagemProduto = require('../models/ImagemProduto');
 const ImagemProdutoController = {
     create : async (req,res) => {
@@ -26,12 +29,10 @@ const ImagemProdutoController = {
                     msg : "O arquivo enviado não e uma imagem"
                 })
             }
-            
-            const imagemProduto = await ImagemProduto.create({
-                nome_imagem : originalname ,
-                imagem : buffer,
-                id_produto : id_produto
-            })
+            const nameImage = "id1-roblox.jpg"
+            await sharp(buffer)
+
+            .toFile(`uploads/${nameImage}`);
 
 
 
@@ -47,18 +48,18 @@ const ImagemProdutoController = {
     },
     getAll : async (req,res) => {
         try {
-            const imagensProduto = await ImagemProduto.findAll();
+            // const imagensProduto = await ImagemProduto.findAll();
 
-            if(imagensProduto.length === 0){
-                return res.status(400).json({
-                    msg : "Não tem nenhuma imagem de produto cadastrada"
-                })
-            }
+            // if(imagensProduto.length === 0){
+            //     return res.status(400).json({
+            //         msg : "Não tem nenhuma imagem de produto cadastrada"
+            //     })
+            // }
 
 
-            return res.status(200).json({
-                imagensProduto
-            })
+            // return res.status(200).json({
+            //     imagensProduto
+            // })
         } catch (error) {
             console.error(error);
             return res.status(500).json({
