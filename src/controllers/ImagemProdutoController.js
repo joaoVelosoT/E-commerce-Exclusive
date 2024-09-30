@@ -1,14 +1,37 @@
+const fs = require('fs')
+const multer = require('multer');
+const ImagemProduto = require('../models/ImagemProduto');
 const ImagemProdutoController = {
     create : async (req,res) => {
 
         try {
-            const {imagem} = req.body;
+            const {id_produto} = req.params;
 
-        console.log(imagem)
+            if(!id_produto){
+                return res.status(400).json({
+                    msg : "Produto não encontrado"
+                })
+            }
+            if(!req.file){
+                return res.status(400).json({
+                    msg : "Imagem não recebida"
+                })
+            }
 
+            const {fieldname, originalname, encoding, mimetype, buffer, size} = req.file;
+            console.log(req.file)
 
-
-
+            if(!['image/gif', 'image/png', 'image/jpeg', 'image/bmp', 'image/webp'].includes(mimetype)){
+                return res.status(400).json({
+                    msg : "O arquivo enviado não e uma imagem"
+                })
+            }
+            
+            const imagemProduto = await ImagemProduto.create({
+                nome_imagem : originalname ,
+                imagem : buffer,
+                id_produto : id_produto
+            })
 
 
 
@@ -17,9 +40,30 @@ const ImagemProdutoController = {
         })
         } catch (error) {
             console.error(error);
-            return res.status(400).json({
+            return res.status(500).json({
                 msg : "Erro, contate o suporte"
             })
+        }
+    },
+    getAll : async (req,res) => {
+        try {
+            const imagensProduto = await ImagemProduto.findAll();
+
+            if(imagensProduto.length === 0){
+                return res.status(400).json({
+                    msg : "Não tem nenhuma imagem de produto cadastrada"
+                })
+            }
+
+
+            return res.status(200).json({
+                imagensProduto
+            })
+        } catch (error) {
+            console.error(error);
+            return res.status(500).json({
+                msg : "Erro, contate o suporte"
+            }) 
         }
     }
 }

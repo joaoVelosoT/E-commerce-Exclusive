@@ -15,10 +15,10 @@ const ImagemProduto = sequelize.define('imagem_produto', {
     },
     descricao_imagem : {
         type : DataTypes.STRING(255),
-        allowNull : false
+        allowNull : true
     },
     imagem : {
-        type : DataTypes.BLOB,
+        type : DataTypes.BLOB('long'),
         allowNull : false
     },
     id_produto : {

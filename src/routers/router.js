@@ -7,6 +7,7 @@ const routerProduto = require('./routerProduto');
 const routerImagemProduto = require('./routerImagemProduto');
 
 router.use("/cliente", routerCliente);
+
 router.use("/categoria", routerCategoria);
 router.use("/vendedor", routerVendedor);
 router.use("/produto", routerProduto);

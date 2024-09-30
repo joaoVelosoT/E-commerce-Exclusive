@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem do Banco de dados</title>
+</head>
+<body>
+        <div id="container">
+            
+        </div>
+</body>
+<script>
+    const teste = async () => {
+
+        const response = await fetch('http://localhost:2030/imagemproduto/');
+
+
+
+        const data = await response.json();
+
+        const container = document.getElementById("container")
+        console.log(container);
+        
+        data.imagensProduto.forEach(element => {
+            const base64 = btoa(String.fromCharCode(...element.imagem.data));
+            const img = document.createElement('img')
+            img.src = `data:image/png;base64,${base64}`
+            console.log(img)
+            container.appendChild(img);
+            console.log(element)
+        });
+
+        console.log(data)
+       
+    }
+
+    teste();
+</script>
+</html>
